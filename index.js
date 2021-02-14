@@ -1,4 +1,5 @@
 import Toast from './Toast.vue';
+import VToast from './components/VToast.vue';
 
 const defaultValues = {
   timeout: 7000,
@@ -33,3 +34,4 @@ const toast = (vue) => {
 };
 
 export default toast;
+export { VToast };
