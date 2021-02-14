@@ -1,0 +1,11 @@
+{
+  "name": "vuetify-snackbar-toast",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "João Neto Castro",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^2.6.12",
+    "vuetify": "^2.4.4"
+  }
+}
