@@ -1,4 +1,3 @@
-import Toast from './Toast.vue';
 import VToast from './components/VToast.vue';
 
 const defaultValues = {
@@ -9,7 +8,6 @@ const defaultValues = {
 
 };
 const toast = (vue) => {
-  vue.component('toast', Toast);
   function show(snackbarData) {
     toast.updateFunction({ ...defaultValues, ...snackbarData });
   }
