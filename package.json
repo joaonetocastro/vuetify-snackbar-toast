@@ -7,5 +7,11 @@
   "dependencies": {
     "vue": "^2.6.12",
     "vuetify": "^2.4.4"
+  },
+  "scripts": {
+    "lint" : "./node_modules/.bin/eslint"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0"
   }
 }

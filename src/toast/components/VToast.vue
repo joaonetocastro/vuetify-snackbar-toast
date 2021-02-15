@@ -8,16 +8,16 @@
 
       <template v-slot:action="{ attrs }">
         <v-btn
-          color="blue"
-          text
+        icon
+          color="brown lighten-5"
           v-bind="attrs"
           @click="snackbar.open = false"
         >
-          <v-icon color="black">fa fa-close</v-icon>
+        <v-icon
+        >mdi-close</v-icon>
         </v-btn>
       </template>
       </v-snackbar>
-
 </template>
 
 <script>
