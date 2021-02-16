@@ -25,6 +25,6 @@ const toast = (vue) => {
     show({ ...snackbarData, text, color: 'success' });
   }
   // eslint-disable-next-line
-  vue.prototype.$toast = {init, info, warn, danger, success};
+  vue.prototype.$toast = {init, info, warn, danger, success, show};
 };
 export default toast;
