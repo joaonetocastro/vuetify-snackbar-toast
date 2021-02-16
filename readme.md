@@ -44,14 +44,14 @@ On your **app.vue** file you should add the v-toast component
     	</v-main>
 	</v-app>
 </template>
-<script>
+```
+```js
 import { VToast } from 'vuetify-snackbar-toast';
 
 export default {
   name: 'App',
   components: { VToast },
 };
-</script>
 
 ```
 ## Usage
