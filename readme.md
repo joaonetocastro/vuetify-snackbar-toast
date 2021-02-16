@@ -36,7 +36,7 @@ new Vue({
 
 ```
 On your **app.vue** file you should add the v-toast component
-```html
+```vue
 <template>
 	<v-app>
 		<v-main>
