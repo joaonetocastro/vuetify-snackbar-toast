@@ -1,6 +1,6 @@
 # vuetify-snackbar-toast
 
-> less redudant code, less time expensive, more sweet ;)
+> less redundant code, less time expensive, more sweet ;)
 
 Vuetify-snackbar-toast purpose is to make the launching of snackbars more sweet and easier ^
 
@@ -44,14 +44,14 @@ On your **app.vue** file you should add the v-toast component
     	</v-main>
 	</v-app>
 </template>
-```
-```js
+<script>
 import { VToast } from 'vuetify-snackbar-toast';
 
 export default {
   name: 'App',
   components: { VToast },
 };
+</script>
 
 ```
 ## Usage
@@ -77,7 +77,7 @@ this.$toast.show(text, config);
 ```
 #### Config[optional]
 the configuration param is optional an object with some options, 
-**if you're using the shorcut functions you shouldn't send the text property here**
+**if you're using the shortcut functions you shouldn't send the text property here**
 ```js
 {
   timeout: 7000, // time in microsseconds
@@ -93,7 +93,7 @@ With this package you can finally focus just on when to show the snackbars.
 
 ## Contribute
 We can work together and make this package more useful to our community! 
-To sugest new features you should open an issue and we will disccuss about how it could be implemented and then include it in the project
+To suggest new features you should open an issue and we will discuss about how it could be implemented and then include it in the project
 ## See Also
 
 - [`VueJS`](https://vuejs.org/)
