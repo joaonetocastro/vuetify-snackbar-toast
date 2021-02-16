@@ -80,10 +80,10 @@ the configuration param is optional an object with some options,
 **if you're using the shorcut functions you shouldn't send the text property here**
 ```json
 {
-  timeout: 7000, // time in microsseconds
-  open: true, 
-  color: 'primary' // based on vuetify colors,
-  text: 'Text you want to show',
+  "timeout": 7000, // time in microsseconds
+  "open": true, 
+  "color": "primary", // based on vuetify colors,
+  "text": "Text you want to show",
 }
 ```
 ## Acknowledgments
