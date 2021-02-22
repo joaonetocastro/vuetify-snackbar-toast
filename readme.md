@@ -60,8 +60,8 @@ to launch a snackbar you should just call a function in any vue component
 this.$toast.success('Hello world!');
 ```
 
-### Methods
-#### shortcuts
+## Methods
+### shortcut Functions
 There are 4 shortcuts included into the $toast property, they are: **success**, **info**, **warn**, **danger**.
 the way to call them is 
 ```js 
@@ -70,13 +70,14 @@ this.$toast.warn(text, config);
 this.$toast.info(text, config);
 this.$toast.danger(text, config);
 ```
-#### show(config)
+### show(config)
 The show function is similar to the others, but you send just the config param, if the text a property of the object
 ```js 
-this.$toast.show(text, config);
+this.$toast.show(config);
 ```
-#### Config[optional]
-the configuration param is optional an object with some options, 
+### Config[optional on shortcut functions]
+the configuration param is optional an object with some options
+
 **if you're using the shortcut functions you shouldn't send the text property here**
 ```js
 {
