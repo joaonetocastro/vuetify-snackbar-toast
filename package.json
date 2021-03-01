@@ -13,5 +13,6 @@
   },
   "devDependencies": {
     "eslint": "^7.20.0"
-  }
+  },
+  "keywords": ["vuetify-snackbar-toast", "vuetify", "snackbar", "toast", "vuetify-snackbar", "snackbar-vuetify"]
 }
