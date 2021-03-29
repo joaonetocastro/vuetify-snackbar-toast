@@ -1,4 +1,4 @@
-import toast from './src/toast';
+import installFunction, {$toast} from './src/toast';
 import VToast from './src/toast/components/VToast.vue';
-export default toast;
-export { VToast };
+export default installFunction;
+export { VToast, $toast };

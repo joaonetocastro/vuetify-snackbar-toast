@@ -4,27 +4,36 @@ const defaultValues = {
   color: '',
   text: '',
 };
-const toast = (vue) => {
-  function show(snackbarData) {
-    toast.updateFunction({ ...defaultValues, ...snackbarData });
+class Toast{
+  constructor() {
+    if(! Toast.instance){
+      Toast.instance = this;
+    }
+    return Toast.instance;
   }
-  function init(updateFunction) {
-    toast.updateFunction = updateFunction;
+  show(snackbarData) {
+    this.updateFunction({ ...defaultValues, ...snackbarData });
+  }
+  init(updateFunction) {
+    this.updateFunction = updateFunction;
   }
 
-  function info(text, snackbarData) {
-    show({ ...snackbarData, text, color: 'info' });
+  info(text, snackbarData) {
+    this.show({ ...snackbarData, text, color: 'info' });
   }
-  function danger(text, snackbarData) {
-    show({ ...snackbarData, text, color: 'red' });
+  danger(text, snackbarData) {
+    this.show({ ...snackbarData, text, color: 'red' });
   }
-  function warn(text, snackbarData) {
-    show({ ...snackbarData, text, color: 'warning' });
+  warn(text, snackbarData) {
+    this.show({ ...snackbarData, text, color: 'warning' });
   }
-  function success(text, snackbarData) {
-    show({ ...snackbarData, text, color: 'success' });
+  success(text, snackbarData) {
+    this.show({ ...snackbarData, text, color: 'success' });
   }
+}
+const install = (vue) => {
   // eslint-disable-next-line
-  vue.prototype.$toast = {init, info, warn, danger, success, show};
-};
-export default toast;
+  vue.prototype.$toast = new Toast();
+}
+export const $toast = new Toast();
+export default install;
